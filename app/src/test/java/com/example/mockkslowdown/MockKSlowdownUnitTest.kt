@@ -83,7 +83,7 @@ class MockKSlowdownUnitTest {
         unmockkAll()
         clearAllMocks()
 
-        // This is still mocked!!!
+        // Usage of ReturnClass is still proxied!!!
         val a = ReturnClassUnit(10, 10)
 
         val time = measureNanoTime {
