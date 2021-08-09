@@ -48,3 +48,10 @@ dependencies {
     androidTestImplementation "io.mockk:mockk-android:$mockkVersion"
 
 }
+
+tasks.withType(Test) {
+    testLogging {
+        outputs.upToDateWhen { false }
+        showStandardStreams = true
+    }
+}
